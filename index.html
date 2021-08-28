@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- BS CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ** -->
+
+      <div class="col-4 my-5 baitapnop">
+        <h5>Bài tập 1</h5>
+        <h2>Nhập số và tính các yêu cầu dưới</h2>
+        <form id="form1">
+          <div class="form-group">
+            <label for="inputNum2">Nhập số n:</label>
+            <input type="number" class="form-control" id="inputNum2" />
+          </div>
+          <button
+            type="button"
+            onclick="addEle()"
+            id="btnAdd"
+            class="btn btn-warning"
+          >
+            Thêm số
+          </button>
+          <button type="button" onclick="resetAll()" class="btn btn-danger">
+            Reset
+          </button>
+          <button
+            type="button"
+            onclick="sum()"
+            id="btnSum"
+            class="btn btn-success"
+          >
+            Tính các số dương
+          </button>
+          <button
+            type="button"
+            onclick="min()"
+            id="btnMin"
+            class="btn btn-success"
+          >
+            Số nhỏ nhất
+          </button>
+          <button
+            type="button"
+            onclick="timSoDuongNhoNhat()"
+            class="btn btn-success"
+          >
+            Số dương nhỏ nhất
+          </button>
+          <button
+            type="button"
+            onclick="soChanCuoiCung()"
+            class="btn btn-success"
+          >
+            Số chẵn cuối cùng
+          </button>
+          <button type="button" onclick="" class="btn btn-success">
+            Đổi vị trí</button
+          ><button type="button" onclick="tangDan()" class="btn btn-success">
+            Sắp xếp tăng dần
+          </button>
+          <button
+            type="button"
+            onclick="firstPrimeNum()"
+            class="btn btn-success"
+          >
+            Số nguyên tố đầu tiên
+          </button>
+          <button
+            type="button"
+            onclick="demSoAmDuong() "
+            class="btn btn-primary"
+          >
+            So sánh số lượng số âm , số dương
+          </button>
+          <p id="txtResult2" class="alert alert-success">Kết quả !</p>
+        </form>
+      </div>
+      <div class="col-4 my-5">
+        <h5>Bài tập 2</h5>
+        <h2>Nhập và đếm số nguyên</h2>
+        <form>
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control"
+              placeholder="nhập số"
+              id="inputInt"
+            />
+          </div>
+          <button
+            type="button"
+            onclick="themSoNguyen()"
+            class="btn btn-primary"
+          >
+            Thêm số
+          </button>
+          <button type="button" onclick="demSoNguyen()" class="btn btn-primary">
+            Đếm số nguyên
+          </button>
+
+          <p class="alert alert-success" id="txtInt">Kết quả</p>
+        </form>
+      </div>
+    </div>
+    <!-- BS JS  -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/test.js"></script>
+    <script src="./js/baitap1-mang.js"></script>
+    <script src="./js/baitap2-mang.js"></script>
+  </body>
+</html>
